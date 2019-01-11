@@ -1,0 +1,393 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.weather.risk.myfarminfo.myfarminfo.mapfragments.FarmAdvisoryFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/wallet_dim_foreground_holo_dark"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical">
+
+
+            <!-- only on layout host scroll view -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/design_layouts"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <Spinner
+                    android:id="@+id/queryCropSpinner"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:id="@+id/textView52"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Farm Advisory"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="25dp" />
+
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <android.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Basal Dose Application"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="20dp" />
+
+                    <android.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp" />
+
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="You need to add basal dose to your crop in these quantities"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="20dp" />
+
+
+                    <android.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp">
+
+                        <android.widget.Space
+                            android:layout_width="match_parent"
+                            android:layout_height="16dp" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="5">
+
+                            <TextView
+                                android:id="@+id/fsdfsdf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:text="Applied(KG/Hectare)"
+                                android:textColor="@android:color/black"
+                                android:textSize="15dp"
+                                android:typeface="serif" />
+
+                            <android.widget.Space
+                                android:layout_width="16dp"
+                                android:layout_height="16dp" />
+
+                            <TextView
+                                android:id="@+id/fsdfswerwedf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:text="Ideal(KG/Hectare)"
+                                android:textColor="@android:color/black"
+                                android:textSize="15dp"
+                                android:typeface="serif" />
+
+
+                        </LinearLayout>
+
+                        <android.widget.Space
+                            android:layout_width="match_parent"
+                            android:layout_height="16dp" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="18"
+
+                            >
+
+                            <TextView
+                                android:id="@+id/N"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="left"
+                                android:text="N"
+                                android:textColor="@android:color/black"
+
+                                android:textSize="15dp"
+                                android:typeface="serif" />
+
+                            <android.widget.Space
+                                android:layout_width="5dp"
+                                android:layout_height="5dp" />
+
+
+                            <EditText
+                                android:id="@+id/appliedBaselDoseN"
+                                android:layout_width="0dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="7"
+                                android:background="@drawable/line"
+                                android:padding="5dp" />
+
+                            <android.widget.Space
+                                android:layout_width="0dp"
+                                android:layout_height="3dp"
+                                android:layout_weight="2" />
+
+
+                            <EditText
+                                android:id="@+id/idealBaselDoseN"
+                                android:layout_width="0dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="7"
+                                android:background="@drawable/line"
+                                android:padding="5dp" />
+
+
+                        </LinearLayout>
+
+                        <android.widget.Space
+                            android:layout_width="3dp"
+                            android:layout_height="3dp" />
+
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="18">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="P"
+                                android:textColor="@android:color/black"
+                                android:textSize="15dp"
+                                android:typeface="serif" />
+
+                            <android.widget.Space
+                                android:layout_width="5dp"
+                                android:layout_height="5dp" />
+
+                            <EditText
+                                android:id="@+id/appliedBaselDoseP"
+                                android:layout_width="0dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="7"
+                                android:background="@drawable/line"
+                                android:padding="5dp" />
+
+                            <android.widget.Space
+                                android:layout_width="0dp"
+                                android:layout_height="5dp"
+                                android:layout_weight="2" />
+
+                            <EditText
+                                android:id="@+id/idealBaselDoseP"
+                                android:layout_width="0dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="7"
+                                android:background="@drawable/line"
+                                android:padding="5dp" />
+
+
+                        </LinearLayout>
+
+                        <android.widget.Space
+                            android:layout_width="3dp"
+                            android:layout_height="3dp" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="18">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="K"
+                                android:textColor="@android:color/black"
+                                android:textSize="15dp"
+                                android:typeface="serif" />
+
+
+                            <android.widget.Space
+                                android:layout_width="5dp"
+                                android:layout_height="5dp" />
+
+                            <EditText
+                                android:id="@+id/appliedBaselDoseK"
+                                android:layout_width="0dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="7"
+                                android:background="@drawable/line"
+                                android:padding="5dp" />
+
+                            <android.widget.Space
+                                android:layout_width="0dp"
+                                android:layout_height="5dp"
+                                android:layout_weight="2" />
+
+                            <EditText
+                                android:id="@+id/idealBaselDoseK"
+                                android:layout_width="0dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="7"
+                                android:background="@drawable/line"
+                                android:padding="5dp" />
+
+
+                        </LinearLayout>
+
+                        <android.widget.Space
+                            android:layout_width="16dp"
+                            android:layout_height="16dp" />
+
+                    </LinearLayout>
+
+                    <android.widget.Space
+                        android:layout_width="16dp"
+                        android:layout_height="16dp" />
+
+                </LinearLayout>
+
+                <android.widget.Space
+                    android:layout_width="16dp"
+                    android:layout_height="16dp" />
+                <!--  8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Ideal Crop Duration"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="20dp" />
+
+                    <android.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/line"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="10dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+
+                        />
+
+                </LinearLayout>
+
+                <android.widget.Space
+                    android:layout_width="16dp"
+                    android:layout_height="16dp" />
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <android.widget.Space
+                        android:layout_width="16dp"
+                        android:layout_height="16dp" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Apply these micronutrients on your crop"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="20dp" />
+
+                    <android.widget.Space
+                        android:layout_width="16dp"
+                        android:layout_height="16dp" />
+
+                    <ListView
+                        android:id="@+id/listView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                    </ListView>
+
+
+                </LinearLayout>
+
+                <android.widget.Space
+                    android:layout_width="16dp"
+                    android:layout_height="16dp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

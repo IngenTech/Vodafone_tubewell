@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:id="@+id/live_log_requested"
+        android:enabled="true"
+        android:title="My Messages"
+        android:titleCondensed="Areas"
+        android:icon="@drawable/ic_message"
+        android:visible="true">
+
+    </item>
+
+    <item
+        android:id="@+id/live_log_new_request"
+        android:enabled="true"
+        android:title="Log New Request"
+        android:titleCondensed="Areas"
+        android:icon="@drawable/log_new_request"
+        android:visible="true">
+
+    </item>
+
+    <item
+        android:id="@+id/live_resolve_resolution"
+        android:enabled="true"
+        android:title="Resolve Requests"
+        android:titleCondensed="Areas"
+        android:icon="@drawable/resolve_request"
+        android:visible="true">
+
+    </item>
+
+    <item
+        android:id="@+id/live_send_resolution"
+        android:enabled="true"
+        android:title="Send Resolution"
+        android:titleCondensed="Areas"
+        android:icon="@drawable/send_resolution"
+        android:visible="false">
+
+    </item>
+
+    <item
+        android:id="@+id/live_on_hold"
+        android:enabled="true"
+        android:title="On Hold"
+        android:titleCondensed="Areas"
+        android:icon="@drawable/on_hold"
+        android:visible="false">
+
+    </item>
+
+    <item
+        android:id="@+id/live_report"
+        android:enabled="true"
+        android:title="Report"
+        android:titleCondensed="Areas"
+        android:icon="@drawable/report_live"
+        android:visible="true">
+
+    </item>
+
+    <item
+        android:id="@+id/live_draft"
+        android:enabled="true"
+        android:title="Draft"
+        android:titleCondensed="Areas"
+        android:icon="@drawable/live_draft"
+        android:visible="false">
+
+    </item>
+
+    <item
+        android:id="@+id/live_utility"
+        android:enabled="true"
+        android:title="Utilities"
+        android:titleCondensed="Areas"
+        android:visible="false">
+        <menu>
+            <item
+                android:id="@+id/live_add_crop"
+                android:title="    Add Crop"
+                android:icon="@drawable/price"/>
+            <item
+                android:id="@+id/live_update_location"
+                android:title="    Update Location"
+                android:icon="@drawable/optimal"/>
+
+            <item
+                android:id="@+id/live_search"
+                android:title="    Search"
+                android:icon="@drawable/best"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/live_home"
+        android:enabled="true"
+        android:title="Go to Home"
+        android:titleCondensed="Areas"
+        android:icon="@drawable/go_to_home"
+        android:visible="true">
+
+    </item>
+
+
+
+    <item
+        android:id="@+id/live_logout"
+        android:title="Logout"
+        android:icon="@drawable/logout"
+        android:visible="true"/>
+
+</menu>

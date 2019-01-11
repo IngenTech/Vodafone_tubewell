@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <item
+        android:id="@+id/dash_nav"
+        android:enabled="true"
+        android:icon="@drawable/best"
+        android:title="Dashboard"
+        android:titleCondensed="Areas"
+        android:visible="true">
+
+    </item>
+
+    <item
+        android:id="@+id/ur_farms_nav"
+        android:enabled="true"
+        android:icon="@drawable/farm_icon"
+        android:title="Your Farms"
+        android:titleCondensed="Areas"
+        android:visible="true">
+
+    </item>
+
+
+    <item
+        android:id="@+id/tag_farm_nav"
+        android:enabled="true"
+        android:icon="@drawable/farm_report"
+        android:title="Tag Farm"
+        android:titleCondensed="Areas"
+        android:visible="true">
+
+    </item>
+
+    <item
+        android:id="@+id/advisory_nav"
+        android:enabled="true"
+        android:icon="@drawable/advisory"
+        android:title="Advisory"
+        android:titleCondensed="Areas"
+        android:visible="true">
+
+    </item>
+
+    <item
+        android:id="@+id/add_user_nav"
+        android:enabled="true"
+        android:icon="@drawable/ic_add_user"
+        android:title="Add Users"
+        android:titleCondensed="Areas"
+        android:visible="true">
+
+    </item>
+
+
+    <item
+        android:id="@+id/formerlist_nav"
+        android:enabled="true"
+        android:icon="@drawable/formers_icon"
+        android:title="Farmer's List"
+        android:titleCondensed="Areas"
+        android:visible="true">
+
+    </item>
+
+    <item
+        android:id="@+id/live_cotton_nav"
+        android:enabled="true"
+        android:icon="@drawable/ic_plant_doctor"
+        android:title="Plant Doctor"
+        android:titleCondensed="Areas"
+        android:visible="true">
+
+    </item>
+
+    <item
+        android:id="@+id/exist_farm_nav"
+        android:enabled="true"
+        android:icon="@drawable/formers_icon"
+        android:title="Saved Farms"
+        android:titleCondensed="Areas"
+        android:visible="true">
+
+    </item>
+
+    <item
+        android:id="@+id/mandi_info"
+        android:enabled="true"
+        android:title="Mandi Information"
+        android:titleCondensed="Areas"
+        android:visible="true">
+        <menu>
+            <item
+                android:id="@+id/mandi_prices"
+                android:icon="@drawable/price"
+                android:title="   Mandi Prices" />
+            <item
+                android:id="@+id/optimal_mandi"
+                android:icon="@drawable/optimal"
+                android:title="   Optimal Mandi" />
+
+            <item
+                android:id="@+id/best_mandi"
+                android:icon="@drawable/best"
+                android:title="   Best Mandi" />
+        </menu>
+    </item>
+
+
+    <item
+        android:id="@+id/farm_report"
+        android:icon="@drawable/advisory"
+        android:title="Farm Report"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/cop_fiesibility"
+        android:title="Crop Feasibility"
+        android:visible="false" />
+
+    <item android:title="Crop Management">
+        <menu>
+            <item
+                android:enabled="false"
+                android:title="   Pest and Disease"
+                android:visible="false" />
+            <item
+                android:id="@+id/vulnerability"
+                android:title="     Vulnerability "
+                android:visible="false" />
+            <item
+                android:id="@+id/forecast_advisory"
+                android:title="     Forecast Advisory"
+                android:icon="@drawable/ic_forecast"
+                android:visible="false" />
+
+            <item
+                android:id="@+id/nutrition"
+                android:title="   Nutrition"
+                android:icon="@drawable/nutrition_ic"
+                android:visible="true"/>
+            <item
+                android:id="@+id/weed"
+                android:title="   Weed"
+                android:visible="false" />
+            <item
+                android:id="@+id/nematode"
+                android:title="   Nematode"
+                android:visible="false" />
+            <item
+                android:id="@+id/water"
+                android:title="   Water"
+                android:visible="false" />
+        </menu>
+    </item>
+
+
+    <item android:title="Water Management">
+        <menu>
+            <item
+                android:id="@+id/water_nav"
+                android:icon="@drawable/water_manage"
+                android:title="  Water"
+                android:visible="true" />
+
+            <item
+                android:id="@+id/voda_nav"
+                android:enabled="true"
+                android:icon="@drawable/ic_voda"
+                android:title="Tubewell"
+                android:titleCondensed="Areas"
+                android:visible="true">
+
+            </item>
+
+            <item
+                android:id="@+id/irrigation_nav"
+                android:icon="@drawable/ic_irrigation"
+                android:title="  Irrigation"
+                android:visible="true" />
+        </menu>
+    </item>
+
+    <item android:title="Log Out">
+        <menu>
+
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/logout"
+                android:title="Logout"
+                android:visible="true" />
+        </menu>
+    </item>
+</menu>

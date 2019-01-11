@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wrms.vodafone">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.SEND" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:name="com.wrms.vodafone.home.AppController"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+
+        <receiver android:name="com.wrms.vodafone.utils.AlarmReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Will not be called unless the application explicitly enables it -->
+        <receiver
+            android:name="com.wrms.vodafone.utils.DeviceBootReceiver"
+            android:enabled="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+
+        <activity
+            android:name="com.wrms.vodafone.home.HomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.wrms.vodafone.home.PollReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.wrms.vodafone.home.AuthenticateService"
+            android:enabled="true"/>
+
+        <service
+            android:name="com.wrms.vodafone.mapfragments.LatLonCellID"
+            android:enabled="true" />
+
+        <activity
+            android:name="com.wrms.vodafone.home.SignUpActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden"
+            android:label="@string/title_activity_sign_up"/>
+        <activity
+            android:name="com.wrms.vodafone.home.Farm_Advisory"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_sign_up"/>
+
+        <activity
+            android:name="com.wrms.vodafone.live_cotton.LiveCottonActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden"
+            android:label="@string/title_activity_live_cotton"/>
+
+        <activity
+            android:name="com.wrms.vodafone.home.FarmInformation"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_sign_up"/>
+
+        <activity
+            android:name="com.wrms.vodafone.tubewell.ElectricStatusMain"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wrms.vodafone.tubewell.StartStopMain"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wrms.vodafone.mapfragments.MinMaxLineChart"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wrms.vodafone.mapfragments.MaxCurFragment"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.wrms.vodafone.home.SignInActivity"
+            android:label="@string/title_activity_sign_in"/>
+        <activity
+            android:name="com.wrms.vodafone.home.Contact"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/contact"/>
+
+        <activity
+            android:name="com.wrms.vodafone.home.AdvisoryActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/advisory"/>
+
+        <activity
+            android:name="com.wrms.vodafone.live_cotton.ResolveRequestActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden"
+            android:label="Resolve Request"/>
+
+        <activity
+            android:name="com.wrms.vodafone.live_cotton.MessageDetailActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden"
+            android:label="Resolve Request"/>
+
+        <activity
+            android:name="com.wrms.vodafone.home.Service"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/services"/>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!--Release key : AIzaSyD3JzEWm5cih0i4k_CyA-45X6vpoQIxSaA
+
+        debug key : AIzaSyCY0kV519EanOgwL4ULx0OJgSuBR6hlC6c
+        -->
+
+        <!--   <meta-data
+               android:name="com.google.android.geo.API_KEY"
+               android:value="AIzaSyCqaMI2mMOrbXkaiiKZqrtVYayvRd9qtCA" />
+   -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCHwGInDLbtWPp_t2LdKFRD_18j_6RIldA" />
+
+        <activity
+            android:name="com.wrms.vodafone.home.AddFarmWithoutMap"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_add_farm_map"/>
+
+        <activity
+            android:name="com.wrms.vodafone.mapfragments.MandiDetailOnMap"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_mandi_detail_on_map"/>
+
+        <activity
+            android:name="com.wrms.vodafone.mapfragments.AddFarmOnMap"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_add_farm_map"/>
+        <activity
+            android:name="com.wrms.vodafone.home.NavigationDrawerActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_navigation_drawer"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <!-- <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+
+                 <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter-->
+        </activity>
+
+        <activity
+            android:name="com.wrms.vodafone.home.MoreInfoActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.wrms.vodafone.home.AfterLoginActivity"
+            android:screenOrientation="portrait"/>
+
+        <receiver android:name="com.wrms.vodafone.utils.LocationPollReceiver" />
+
+
+
+        <service
+            android:name="com.wrms.vodafone.push_notification.GCMPushReceiverService"
+            android:stopWithTask="false"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <!--             GCM Registration Intent Service -->
+        <service
+            android:name="com.wrms.vodafone.push_notification.GCMRegistrationIntentService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+
+    </application>
+
+</manifest>

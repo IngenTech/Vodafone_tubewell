@@ -1,0 +1,26 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="heading_space_height">16dp</dimen>
+    <dimen name="autocomplete_textview_width">300dp</dimen>
+
+    <dimen name="tool_bar_height">20dp</dimen>
+    <dimen name="heading_text_size">20dp</dimen>
+
+    <dimen name="leftPadding">20dp</dimen>
+    <dimen name="rightPadding">20dp</dimen>
+    <dimen name="topPadding">10dp</dimen>
+    <dimen name="bottomPadding">5dp</dimen>
+    <dimen name="weight_space">16dp</dimen>
+
+    <dimen name="formTextSize">17dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">130dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="weightMargin">5dp</dimen>
+
+</resources>

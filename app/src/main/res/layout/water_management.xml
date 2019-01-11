@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/next_btn">
+
+
+        <LinearLayout
+            android:id="@+id/aaaa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/actionbar"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/design_layouts">
+
+                <Spinner
+                    android:id="@+id/water_crops_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                </Spinner>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/design_layouts">
+
+                <Spinner
+                    android:id="@+id/water_soil_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                </Spinner>
+            </RelativeLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <Button
+                android:id="@+id/water_submit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="7dp"
+                android:background="@drawable/button_background"
+                android:text="SUBMIT"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/aaaa"
+            android:orientation="vertical">
+            <View
+                android:layout_below="@+id/dsaas"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/un_selected_button_background"/>
+
+            <LinearLayout
+                android:id="@+id/dsaas"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:paddingLeft="7dp"
+                    android:text="Stage"
+                    android:textSize="15sp"
+                    android:textColor="#000000"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/un_selected_button_background" />
+
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingLeft="7dp"
+                    android:text="S.W. Requirement"
+                    android:textSize="15sp"
+                    android:textColor="#000000"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/un_selected_button_background" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tvPrice"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Exp. Rain"
+                    android:textSize="15sp"
+                    android:textColor="#000000" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/un_selected_button_background" />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tvPrice"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="W. Needed"
+                    android:textSize="15sp"
+                    android:textColor="#000000" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_below="@+id/dsaas"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/un_selected_button_background"/>
+
+
+
+            <android.support.v7.widget.RecyclerView
+
+                android:id="@+id/recyclerView_water"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/button_background"
+        android:text="next"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp"/>
+
+</RelativeLayout>

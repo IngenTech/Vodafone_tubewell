@@ -1,0 +1,194 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <ImageView
+                android:id="@+id/gpsStatus"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/gps_not"
+
+                android:visibility="gone"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/stateList"
+                android:layout_weight=".70" />
+
+            <Button
+                android:id="@+id/distance"
+                android:layout_width="match_parent"
+                android:layout_weight="1.30"
+                android:layout_height="50dp"
+                android:text="Minimum Distance"
+                android:ellipsize="end"
+                android:background="@drawable/line" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <Button
+                android:id="@+id/draw_by_walk"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/line"
+                android:layout_height="45dp"
+                android:ellipsize="end"
+                android:onClick="drawZone"
+                android:text="BOUNDRY" />
+            <Button
+                android:id="@+id/draw_button"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/line"
+                android:layout_height="45dp"
+                android:onClick="drawZone"
+                android:text="Draw"/>
+
+            <Button
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:text="View Type"
+                android:ellipsize="end"
+                android:background="@drawable/line" />
+
+
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:background="@drawable/line"
+                android:text="Next"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/alertTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="NO GPS"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@color/red_alret"
+            android:visibility="gone"/>
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:id="@+id/map"
+            tools:context="com.weather.risk.mfi.myfarminfo.mapfragments.AddFarmOnMap"
+            android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+
+
+    </LinearLayout>
+
+
+    <!-- <Button
+         android:id="@+id/next"
+         android:layout_width="wrap_content"
+         android:layout_height="40dp"
+         android:background="@drawable/line"
+         android:text="Next"
+         android:layout_alignParentTop="true"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentEnd="true"
+         android:layout_marginTop="44dp" />
+
+     <Button
+         android:id="@+id/mapView"
+         android:layout_width="wrap_content"
+         android:layout_height="40dp"
+         android:text="View Type"
+         android:background="@drawable/line"
+
+         android:layout_alignTop="@+id/next"
+         android:layout_toLeftOf="@+id/next"
+         android:layout_toStartOf="@+id/next" />
+     <Button
+         android:id="@+id/draw_button"
+         android:layout_width="wrap_content"
+         android:background="@drawable/line"
+         android:layout_height="40dp"
+         android:onClick="drawZone"
+         android:text="Draw"
+
+         android:layout_alignTop="@+id/mapView"
+         android:layout_toRightOf="@+id/draw_by_walk"
+         android:layout_toEndOf="@+id/draw_by_walk" />
+     <Button
+         android:id="@+id/draw_by_walk"
+         android:layout_width="wrap_content"
+         android:background="@drawable/line"
+         android:layout_height="40dp"
+         android:onClick="drawZone"
+         android:text="Cover Boundary"
+
+         android:layout_alignTop="@+id/draw_button"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentStart="true" />
+ -->
+
+    <!-- <Spinner
+         android:id="@+id/stateList"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_margin="10dp" />-->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/home_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/home_return"
+        android:layout_margin="5dp"/>
+
+<LinearLayout
+    android:id="@+id/clear_lay"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:layout_toRightOf="@id/home_return"
+    android:visibility="gone"
+    android:layout_alignParentBottom="true">
+    <Button
+        android:id="@+id/draw_poly"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Build"/>
+    <Button
+        android:id="@+id/clear_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="clear"/>
+</LinearLayout>
+
+</RelativeLayout>

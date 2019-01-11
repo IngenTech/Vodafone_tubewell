@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ColorPrimary">
+
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/tool_bar"
+            ></include>
+
+    </LinearLayout>
+
+    <android.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/weight_space" />
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/design_layouts"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Services"
+                    android:textSize="35sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    android:gravity="center" />
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/weight_space" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Services provided by myfarminfo"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    android:textColor="@android:color/black"
+                    android:typeface="serif"/>
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/weight_space" />
+
+            </LinearLayout>
+            <android.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/weight_space" />
+
+            <android.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/weight_space" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@android:color/white"
+               >
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/weight_space" />
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/area_chart"
+                    android:background="@drawable/services_icon_background"
+                    android:layout_gravity="center"
+                   />
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/weight_space" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Crop Secure"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:typeface="serif"
+                    android:layout_gravity="center"
+                  />
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/weight_space" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get your crop insured"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    android:textColor="@android:color/black"
+                    android:typeface="serif"/>
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/weight_space" />
+
+            </LinearLayout>
+
+            <android.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/weight_space" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@android:color/white">
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/weight_space" />
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_action_soil_doctor1"
+                    android:background="@drawable/services_icon_background"
+
+                    android:layout_gravity="center"
+                    />
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/weight_space" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Soil Doctor"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:typeface="serif"
+                    android:layout_gravity="center_vertical" />
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/weight_space" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Send your soil to our truck to get it checked"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    android:textColor="@android:color/black"
+                    android:typeface="serif"/>
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/weight_space" />
+
+            </LinearLayout>
+
+            <android.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/weight_space" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@android:color/white">
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/weight_space" />
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/services_icon_background"
+                    android:src="@drawable/ic_action_firstaid1"
+
+                    android:layout_gravity="center" />
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/weight_space" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Plant Doctor"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:typeface="serif"
+                    android:layout_gravity="center_vertical" />
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/weight_space" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Whatsapp a photo of your plant to receive instant disease diagnosis from our experts"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    android:textColor="@android:color/black"
+                    android:typeface="serif"
+                    android:gravity="center"/>
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/weight_space" />
+
+            </LinearLayout>
+
+            <android.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/weight_space" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@android:color/white">
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/weight_space" />
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/money_icon1"
+                    android:background="@drawable/services_icon_background"
+                    android:layout_gravity="center" />
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/weight_space" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deals"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:typeface="serif"
+                    android:layout_gravity="center_vertical" />
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/weight_space" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Great deals on seeds and pesticides"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    android:textColor="@android:color/black"
+                    android:typeface="serif"/>
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/weight_space" />
+
+            </LinearLayout>
+
+            <android.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/weight_space" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@android:color/white">
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/weight_space" />
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/target1"
+                    android:background="@drawable/services_icon_background"
+                    android:layout_gravity="center" />
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/weight_space" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Farm Income Pro"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:typeface="serif"
+                    android:layout_gravity="center_vertical" />
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/weight_space" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Farm level information to minimize cost and to check the feasibility of growing a particular crop"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    android:textColor="@android:color/black"
+                    android:typeface="serif"
+                    android:layout_gravity="center_vertical" />
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/weight_space" />
+
+            </LinearLayout>
+
+            <android.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/weight_space" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@android:color/white">
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/weight_space" />
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/farm_future_new1"
+                    android:background="@drawable/services_icon_background"
+                    android:layout_gravity="center" />
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/weight_space" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Farm Future"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:typeface="serif"
+                    android:layout_gravity="center_vertical" />
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/weight_space" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Check the developments around your farm"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    android:textColor="@android:color/black"
+                    android:typeface="serif"
+                    android:layout_gravity="center_vertical" />
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/weight_space" />
+
+            </LinearLayout>
+
+            <android.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/weight_space" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

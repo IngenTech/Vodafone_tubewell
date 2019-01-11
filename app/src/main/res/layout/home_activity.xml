@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/header_bg"
+    android:focusableInTouchMode="true">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"></include>
+
+    <android.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heading_space_height" />
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool_bar"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+
+        <TextView
+            android:id="@+id/loginStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/heading_color"
+            android:textSize="@dimen/heading_text_size"
+            android:typeface="serif" />
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="170dp"
+            android:background="@drawable/irrigation"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:id="@+id/llInvisible"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tool_bar"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <Button
+                android:id="@+id/sign_in"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:text="Login"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <android.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heading_space_height" />
+
+
+            <Button
+                android:id="@+id/sign_up"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@drawable/button_background"
+                android:text="REGISTER"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/visibleLoginDetails"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tool_bar"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/loginUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/heading_color"
+                android:textSize="@dimen/heading_text_size"
+                android:typeface="serif" />
+
+            <android.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heading_space_height" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Select Your Farm"
+                    android:textColor="@color/heading_color"
+                    android:textSize="@dimen/heading_text_size"
+                    android:typeface="serif" />
+            </LinearLayout>
+
+            <android.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heading_space_height" />
+
+            <Spinner
+                android:id="@+id/chooseFarmSpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line" />
+
+            <android.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heading_space_height" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/showORtext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayout"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <android.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heading_space_height" />
+
+        <android.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heading_space_height" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="OR"
+            android:textColor="@color/heading_color"
+            android:textSize="@dimen/heading_text_size"
+            android:typeface="serif" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/LinearLayout"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Locate the farm of your interest"
+                android:textColor="@color/heading_color"
+                android:textSize="@dimen/heading_text_size"
+                android:typeface="serif" />
+
+            <android.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heading_space_height" />
+
+            <AutoCompleteTextView
+                android:id="@+id/farm_location"
+                android:layout_width="@dimen/autocomplete_textview_width"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:hint="Enter farm location slowly"
+                android:padding="5dp"
+                android:typeface="serif" />
+
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heading_space_height" />
+
+                <Button
+                    android:id="@+id/mandi_info_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_background"
+                    android:text="Mandi INFO"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heading_space_height" />
+
+                <Button
+                    android:id="@+id/tell_me_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_background"
+                    android:text="TELL ME MORE"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

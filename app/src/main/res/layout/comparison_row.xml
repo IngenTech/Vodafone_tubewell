@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ttttt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/dsaas"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/date_comp"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="7dp"
+                android:text="Date"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:background="@color/un_selected_button_background" />
+
+
+            <TextView
+
+                android:id="@+id/max_temp_act"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Max Temp Act"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:background="@color/un_selected_button_background" />
+
+
+            <TextView
+                android:id="@+id/max_temp_for"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Max Temp For"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:background="@color/un_selected_button_background" />
+
+
+            <TextView
+                android:id="@+id/min_temp_act"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Min Temp Act"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:background="@color/un_selected_button_background" />
+
+
+            <TextView
+                android:id="@+id/min_temp_for"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Min Temp For"
+                android:textSize="12dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:background="@color/un_selected_button_background" />
+
+
+            <TextView
+
+                android:id="@+id/rain_act"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Rain Act"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:background="@color/un_selected_button_background" />
+
+
+            <TextView
+
+                android:id="@+id/rain_for"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Rain For"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/dsaas"
+            android:background="@color/un_selected_button_background" />
+
+    </RelativeLayout>
+
+</LinearLayout>

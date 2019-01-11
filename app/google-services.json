@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "586406830265",
+    "firebase_url": "https://vodafone-200211.firebaseio.com",
+    "project_id": "vodafone-200211",
+    "storage_bucket": "vodafone-200211.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:586406830265:android:fef874cf1f734a8b",
+        "android_client_info": {
+          "package_name": "com.wrms.vodafone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "586406830265-0p5f3miccapmb33cuk1ks8jpjfkljcfv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfmwGcz-V1POmsKsnoB9sk1olD-Mz6nio"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ColorPrimary">
+
+            <include
+                android:id="@+id/tool_bar"
+                layout="@layout/tool_bar"
+                ></include>
+
+        </LinearLayout>
+    -->
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/design_layouts"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+
+            <android.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Farm Information"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/emailJson"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:text="Email Json"
+                    android:visibility="gone"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+
+            <android.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+
+                >
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Please enter basic information about farm"
+                    android:textColor="@android:color/black"
+
+                    android:textSize="16sp"
+                    android:typeface="serif" />
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Farm Name *"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/formTextSize"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <EditText
+                    android:id="@+id/farmName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/line"
+                    android:hint="Enter Farm Name"
+                    android:inputType="text"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Farmer Name"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/formTextSize"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <EditText
+                    android:id="@+id/farmerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/line"
+                    android:hint="Enter Farmer Name"
+                    android:inputType="text"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Farmer Phone"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/formTextSize"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <EditText
+                    android:id="@+id/farmerNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/line"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:hint="Enter Farmer Phone Number"
+                    android:padding="5dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Draw Farm Area (Acre)"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/formTextSize"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <EditText
+                    android:id="@+id/plot_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/line"
+                    android:inputType="none"
+                    android:maxLength="10"
+                    android:editable="false"
+                    android:clickable="false"
+                    android:hint="Area"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Farm Area (Acre)"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/formTextSize"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <EditText
+                    android:id="@+id/farm_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/line"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10"
+                    android:hint="Enter Farm Area"
+                    android:padding="5dp" />
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/crop1"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/line"
+                        android:text="Crop1" />
+
+                    <Button
+                        android:id="@+id/crop2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        android:background="@drawable/line"
+                        android:text="Crop2" />
+
+                    <Button
+                        android:id="@+id/crop3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        android:background="@drawable/line"
+                        android:text="Crop3" />
+
+                    <Button
+                        android:id="@+id/crop4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        android:background="@drawable/line"
+                        android:text="Crop4" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Crop "
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/formTextSize"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <Spinner
+                    android:id="@+id/crop"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/line"
+                    android:hint=" " />
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Variety "
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/formTextSize"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <EditText
+                    android:id="@+id/variety"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/line"
+                    android:padding="5dp"
+                    android:hint="Variety" />
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sow Period Form "
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/formTextSize"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <EditText
+                    android:id="@+id/editTextShowPeriodFrom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/line"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="date"
+                    android:padding="5dp" />
+
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sow Period To "
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/formTextSize"
+                    android:textStyle="bold"
+
+                    android:typeface="serif" />
+
+                <EditText
+                    android:id="@+id/editTextShowPeriodTo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/line"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="date"
+                    android:padding="5dp" />
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Have You applied basal dose to your crop? "
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/formTextSize"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:typeface="serif" />
+
+                <Spinner
+                    android:id="@+id/basalDose"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:visibility="gone"
+                    android:background="@drawable/line"
+                    android:hint=" " />
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="16dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/line"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        android:id="@+id/fillBasalDose"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Please fill the basal dose table"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/formTextSize"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                    <android.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/N"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="N"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/formTextSize"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                        <android.widget.Space
+                            android:layout_width="5dp"
+                            android:layout_height="5dp" />
+
+                        <EditText
+                            android:id="@+id/baselDoseTableN"
+                            android:layout_width="150dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/line"
+                            android:digits="0123456789."
+                            android:inputType="numberDecimal"
+                            android:maxLength="2"
+                            android:padding="5dp" />
+
+                        <android.widget.Space
+                            android:layout_width="5dp"
+                            android:layout_height="5dp" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="KG/Hectare"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/formTextSize"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                    </LinearLayout>
+
+                    <android.widget.Space
+                        android:layout_width="3dp"
+                        android:layout_height="3dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="P"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/formTextSize"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                        <android.widget.Space
+                            android:layout_width="5dp"
+                            android:layout_height="5dp" />
+
+                        <EditText
+                            android:id="@+id/baselDoseTableP"
+                            android:layout_width="150dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/line"
+                            android:digits="0123456789."
+                            android:inputType="numberDecimal"
+                            android:maxLength="2"
+                            android:padding="5dp" />
+
+                        <android.widget.Space
+                            android:layout_width="5dp"
+                            android:layout_height="5dp" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="KG/Hectare"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/formTextSize"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                    </LinearLayout>
+
+                    <android.widget.Space
+                        android:layout_width="3dp"
+                        android:layout_height="3dp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="K"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/formTextSize"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                        <android.widget.Space
+                            android:layout_width="5dp"
+                            android:layout_height="5dp" />
+
+                        <EditText
+                            android:id="@+id/baselDoseTableK"
+                            android:layout_width="150dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/line"
+                            android:digits="0123456789."
+                            android:inputType="numberDecimal"
+                            android:maxLength="2"
+                            android:padding="5dp" />
+
+                        <android.widget.Space
+                            android:layout_width="5dp"
+                            android:layout_height="5dp" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="KG/Hectare"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/formTextSize"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                    </LinearLayout>
+
+                    <android.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/nutrition_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Which nutrition have you applied on your farm"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/formTextSize"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                    <android.widget.Space
+                        android:layout_width="5dp"
+                        android:layout_height="5dp" />
+
+                    <EditText
+                        android:id="@+id/nutrition"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/line"
+                        android:hint=" Enter Nutrition"
+                        android:padding="5dp" />
+
+                </LinearLayout>
+
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp" />
+
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="What is your main concern ?"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/formTextSize"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <Spinner
+                    android:visibility="gone"
+                    android:id="@+id/yourConcern"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+
+                    android:background="@drawable/line"
+                    android:hint=" " />
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp" />
+
+                <TextView
+                    android:id="@+id/additional_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Additional Information"
+                    android:textColor="#ffffff"
+                    android:background="@color/ColorPrimary"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"/>
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp" />
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:background="@drawable/button_background"
+
+                    android:text="Submit" />
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp" />
+            </LinearLayout>
+
+            <android.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

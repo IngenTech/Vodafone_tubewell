@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/dsaas"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/stage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:paddingLeft="7dp"
+            android:text="Stage"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="@color/un_selected_button_background" />
+
+
+
+        <TextView
+
+            android:id="@+id/s_w_require"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="7dp"
+            android:text="S.W. Requirement"
+            android:textSize="12sp" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="@color/un_selected_button_background" />
+
+
+        <TextView
+            android:id="@+id/exp_rain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvPrice"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Exp. Rain"
+            android:textSize="15sp" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="@color/un_selected_button_background" />
+
+
+
+        <TextView
+            android:id="@+id/w_needed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvPrice"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="W. Needed"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_below="@+id/dsaas"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/un_selected_button_background"/>
+
+
+</RelativeLayout>

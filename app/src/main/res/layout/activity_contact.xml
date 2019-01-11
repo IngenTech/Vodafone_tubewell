@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ColorPrimary">
+
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/tool_bar"
+            ></include>
+
+    </LinearLayout>
+
+
+
+    <android.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/weight_space" />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/design_layouts"
+        android:orientation="vertical"
+       >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical"
+            android:background="@drawable/design_layouts"
+         >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="CONTACT US"
+                android:id="@+id/textView"
+                android:textColor="@color/ColorPrimary"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:typeface="serif"/>
+
+            <android.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/weight_space" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@android:color/white">
+
+
+    <android.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/weight_space" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="italic"
+        android:text="Answer Desk is ready to help you with whatever you need"
+        android:textSize="20sp"
+
+        android:id="@+id/textView1" />
+    <android.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/weight_space" />
+
+
+
+    <EditText
+        android:id="@+id/yourName"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/line"
+        android:inputType="text"
+        android:padding="5dp"
+        android:hint="Your Name *" />
+    <android.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/weight_space" />
+
+    <EditText
+        android:id="@+id/yourEmale"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/line"
+        android:padding="5dp"
+        android:ems="10"
+        android:hint="Your Mail *"
+        android:layout_gravity="center_vertical"
+         />
+    <android.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/weight_space" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:inputType="phone"
+        android:background="@drawable/line"
+        android:padding="5dp"
+        android:ems="10"
+        android:id="@+id/yourPhone"
+        android:hint="Your Phone *"
+        android:layout_gravity="center_horizontal" />
+
+    <android.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/weight_space" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:id="@+id/yourMessage"
+        android:hint="Your Message *"
+        android:inputType="text"
+        android:background="@drawable/line"
+        android:padding="5dp"
+        android:gravity="top"
+
+        />
+
+    <android.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/weight_space" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Message"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_background"
+        android:layout_gravity="center"
+
+        android:id="@+id/sendMessage" />
+        <android.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/weight_space" />
+            </LinearLayout>
+
+</LinearLayout>
+        </ScrollView>
+
+
+
+</LinearLayout>

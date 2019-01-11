@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/dsaas"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/farmer_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:paddingLeft="7dp"
+            android:text="Farmer Name"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="@color/un_selected_button_background" />
+
+
+        <TextView
+            android:id="@+id/cluster"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvPrice"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="phone"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="@color/un_selected_button_background" />
+
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvPrice"
+            android:layout_weight="1"
+            android:textColor="#ca3434"
+            android:gravity="center"
+            android:text="999999"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+    <View
+        android:layout_below="@+id/dsaas"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/un_selected_button_background"/>
+
+
+</RelativeLayout>

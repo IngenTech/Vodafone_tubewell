@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:id="@+id/map"
+    tools:context="com.weather.risk.myfarminfo.myfarminfo.mapfragments.MandiDetailOnMap"
+    android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    <Button
+        android:id="@+id/normal"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/line"
+        android:text="Normal"
+        />
+
+    <Button
+        android:id="@+id/sattelite"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Satellite"
+        android:layout_toLeftOf="@+id/normal"
+        android:background="@drawable/line"
+
+        />
+
+</RelativeLayout>

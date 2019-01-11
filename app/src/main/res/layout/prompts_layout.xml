@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout2">
+
+        <android.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:padding="5dp"
+            android:text="Login"
+            android:textSize="25dp"
+            />
+        <android.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Phone No./Email"
+        android:textSize="20dp"
+        />
+        <android.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+    <EditText
+        android:id="@+id/UserID"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:inputType="text"
+        android:ems="10"
+        android:background="@drawable/line"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+
+        <requestFocus />
+
+    </EditText>
+        <android.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/weight_space"
+           />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password "
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        />
+        <android.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <EditText
+            android:id="@+id/UserPassword"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:background="@drawable/line"
+            android:inputType="textPassword"
+           android:password="true"
+            >
+        </EditText>
+        <android.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="save password"
+            android:id="@+id/checkBox"
+            android:padding="5dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

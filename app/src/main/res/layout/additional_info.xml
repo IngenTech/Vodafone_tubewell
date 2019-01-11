@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+
+        <android.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <EditText
+            android:id="@+id/addi_showingdate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/line"
+            android:ems="10"
+
+            android:hint="Sowing Date"
+            android:visibility="gone"
+            android:inputType="date"
+            android:editable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:padding="5dp">
+
+
+            <requestFocus />
+
+        </EditText>
+
+
+
+        <android.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <Spinner
+            android:id="@+id/addi_lastcrop_sown"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/line"
+            android:padding="5dp" />
+
+        <android.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/addi_seedvariety"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/line"
+            android:hint="Seed Variety"
+            android:inputType="text"
+            android:visibility="gone"
+            android:padding="5dp" />
+
+        <android.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <EditText
+            android:id="@+id/addi_irrigation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/line"
+            android:hint="Irrigation source"
+            android:padding="5dp" />
+
+        <android.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <Spinner
+            android:id="@+id/addi_pattern"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/line"
+            android:padding="5dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
